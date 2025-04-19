@@ -238,6 +238,7 @@ const Home = () => {
                       placeholder='Enter your name'
                       type='text'
                       id='name'
+                      name='name'
                     />
                   </div>
                   <div className='mb-4'>
