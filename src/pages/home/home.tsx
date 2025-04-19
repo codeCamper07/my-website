@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser'
 const Home = () => {
   const downloadResume = () => {
     const link = document.createElement('a')
-    link.href = '/src/assets/resume.pdf' // Update the path to your PDF file
+    link.href = '/resume.pdf' // Update the path to your PDF file
     link.download = 'Bhargav_Resume.pdf' // Set the desired file name
     link.click()
     link.remove()
@@ -39,7 +39,7 @@ const Home = () => {
         <div id='hero' className='hero bg-base-200 min-h-screen'>
           <div className='hero-content flex-col lg:flex-row-reverse'>
             <img
-              src='/src/assets/profile.png'
+              src='/profile.png'
               className='max-w-2xs rounded-lg shadow-2xl'
             />
             <div>
@@ -69,7 +69,7 @@ const Home = () => {
             <div className='flex gap-3.5'>
               <div className='avatar'>
                 <div className='w-12 rounded-full max-sm:w-10'>
-                  <img src='/src/assets/ibs.avif' alt='IBS Logo' />
+                  <img src='/ibs.avif' alt='IBS Logo' />
                 </div>
               </div>
               <div className='flex flex-col'>
@@ -90,7 +90,7 @@ const Home = () => {
             <div className='flex gap-3.5'>
               <div className='avatar'>
                 <div className='w-12 rounded-full max-sm:w-10'>
-                  <img src='/src/assets/srichai.webp' alt='SR Logo' />
+                  <img src='/srichai.webp' alt='SR Logo' />
                 </div>
               </div>
               <div className='flex flex-col'>
@@ -111,7 +111,7 @@ const Home = () => {
             <div className='flex gap-3.5'>
               <div className='avatar'>
                 <div className='w-12 rounded-full max-sm:w-10'>
-                  <img src='/src/assets/iea.png' alt='IEA Logo' />
+                  <img src='/iea.png' alt='IEA Logo' />
                 </div>
               </div>
               <div className='flex flex-col'>
@@ -150,7 +150,7 @@ const Home = () => {
               <figure>
                 <img
                   className='aspect-[16/9] object-cover'
-                  src='/src/assets/devstore.png'
+                  src='/devstore.png'
                   alt='devstore'
                 />
               </figure>
@@ -175,7 +175,7 @@ const Home = () => {
               <figure>
                 <img
                   className='aspect-[16/9] object-cover'
-                  src='/src/assets/todo.png'
+                  src='/todo.png'
                   alt='todoapp'
                 />
               </figure>
@@ -200,7 +200,7 @@ const Home = () => {
               <figure>
                 <img
                   className='aspect-[16/9] object-cover'
-                  src='/src/assets/wikisearch.png'
+                  src='/wikisearch.png'
                   alt='devstore'
                 />
               </figure>
