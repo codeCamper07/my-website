@@ -4,6 +4,7 @@ import { Globe, Download } from 'lucide-react'
 import './home.css'
 import { FormEvent } from 'react'
 import emailjs from '@emailjs/browser'
+import toast, { Toaster } from 'react-hot-toast'
 
 const Home = () => {
   const downloadResume = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     link.download = 'Bhargav_Resume.pdf' // Set the desired file name
     link.click()
     link.remove()
+    toast.success('Dowloaded')
   }
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -25,9 +27,11 @@ const Home = () => {
         import.meta.env.VITE_EMAIL_PUBLIC_KEY || '',
       )
       .then(() => {
+        toast.success('Message Sent')
         return (e.target as HTMLFormElement).reset() // Reset the form fields after submission
       })
       .catch((error) => {
+        toast.error('Unable to send Message')
         console.error('Failed to send email:', error)
       })
   }
@@ -239,6 +243,7 @@ const Home = () => {
                       type='text'
                       id='name'
                       name='name'
+                      required
                     />
                   </div>
                   <div className='mb-4'>
@@ -251,6 +256,7 @@ const Home = () => {
                       name='email'
                       id='email'
                       type='email'
+                      required
                     />
                   </div>
                   <div className='mb-4'>
@@ -262,6 +268,7 @@ const Home = () => {
                     <textarea
                       className='w-full px-4 py-2 bg-base-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition duration-300'
                       rows={4}
+                      required
                       placeholder='Enter your message'
                       name='message'
                       id='message'></textarea>
@@ -277,6 +284,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Toaster position='bottom-right' />
       <Footer />
     </>
   )
