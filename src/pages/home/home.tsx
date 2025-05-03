@@ -7,15 +7,6 @@ import emailjs from '@emailjs/browser'
 import toast, { Toaster } from 'react-hot-toast'
 
 const Home = () => {
-  const downloadResume = () => {
-    const link = document.createElement('a')
-    link.href = '/resume.pdf' // Update the path to your PDF file
-    link.download = 'Bhargav_Resume.pdf' // Set the desired file name
-    link.click()
-    link.remove()
-    toast.success('Dowloaded')
-  }
-
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log(e.target)
@@ -55,13 +46,12 @@ const Home = () => {
                 building scalable web applications. I love solving complex
                 problems with clean and efficient code.
               </p>
-              <button
-                onClick={() => {
-                  downloadResume()
-                }}
+              <a
+                target='_blank'
+                href='./bhargavDommaraju_01.pdf'
                 className='btn btn-accent'>
                 <Download className='w-3.5' /> Dowload Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>
