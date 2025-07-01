@@ -144,6 +144,37 @@ const Home = () => {
               <figure>
                 <img
                   className='aspect-[16/9] object-cover'
+                  src='/h-school.png'
+                  alt='H-School'
+                />
+              </figure>
+              <div className='card-body'>
+                <h2 className='card-title'>H-School</h2>
+                <p>
+                  This dashboard is more than just a UI—it's a showcase of
+                  modern web development principles: Modular components & clean
+                  folder structure Reusable API patterns and protected routes
+                  User-centric design with responsive layouts Whether you're
+                  managing users, visualizing data, or just exploring full-stack
+                  workflows, Dashboard H School reflects my hands-on experience
+                  building scalable, user-authenticated apps with modern
+                  tooling.
+                </p>
+                <div className='card-actions justify-start'>
+                  <a
+                    href='https://dashboard-h-school.vercel.app/'
+                    target='_blank'
+                    className='badge badge-accent'>
+                    <Globe className='w-4' />
+                    website
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='bg-base-300  w-42 sm:w-52 md:w-62 lg:w-96 shadow-sm card card-xs sm:card-sm md:card-md lg:card-lg'>
+              <figure>
+                <img
+                  className='aspect-[16/9] object-cover'
                   src='/devstore.png'
                   alt='devstore'
                 />
@@ -151,8 +182,8 @@ const Home = () => {
               <div className='card-body'>
                 <h2 className='card-title'>DevStore</h2>
                 <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
+                  Developed a custom E-Commerce website using React JS where
+                  only authenticated users can have access to the website.
                 </p>
                 <div className='card-actions justify-start'>
                   <a
@@ -176,8 +207,9 @@ const Home = () => {
               <div className='card-body'>
                 <h2 className='card-title'>Todo App</h2>
                 <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
+                  Developed a todo application helps you manage your tasks and
+                  deadlines efficiently, enabling you to stay organized and
+                  accomplish more with less stress
                 </p>
                 <div className='card-actions justify-start'>
                   <a
@@ -201,8 +233,9 @@ const Home = () => {
               <div className='card-body'>
                 <h2 className='card-title'>Wiki Search App</h2>
                 <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
+                  Developed custom Wikipedia search application where users can
+                  search and view curated results and can see detailed
+                  explanations in Wikipedia by clicking on the specific result
                 </p>
                 <div className='card-actions justify-start'>
                   <a
